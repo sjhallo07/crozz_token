@@ -102,7 +102,7 @@ sequenceDiagram
 
 🏃‍♂️ CRUD Operations Flow
 
-```mermaid
+
 flowchart TD
     START[Start Operation] --> TYPE{Operation Type}
     
