@@ -1,5 +1,5 @@
 # crozz_token
-crozz the new stage.     
+crozz the new stage.   logo-no-background.png  
 
 https://crozzcoin.com/
 
