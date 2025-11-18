@@ -1,6 +1,10 @@
-# crozz_token
-crozz the new stage.   logo-no-background.png  
+# CROZZ Token
 
+![CROZZ Logo](logo-no-background.png)
+
+## Official CROZZ Community Token
+
+A powerful Sui-based token with advanced features and real-time monitoring.
 https://crozzcoin.com/
 
 🏗️ System Architecture Diagram
