@@ -1,0 +1,77 @@
+/* Dashboard general styles - Sui inspired */
+.dashboard-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  background: linear-gradient(135deg, #f6f7fb 0%, #e3e9f9 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(49, 130, 206, 0.08);
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+.dashboard-container h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #1a365d;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.dashboard-card {
+  border: 1px solid #b3c6f7;
+  border-radius: 12px;
+  padding: 20px 18px 16px 18px;
+  margin-bottom: 18px;
+  background: linear-gradient(120deg, #f9fafb 60%, #e3e9f9 100%);
+  box-shadow: 0 2px 8px rgba(49, 130, 206, 0.04);
+  transition: box-shadow 0.2s;
+}
+.dashboard-card h2 {
+  margin-top: 0;
+  color: #225ea8;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.dashboard-card button {
+  background: linear-gradient(90deg, #3182ce 60%, #4fd1c5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(49, 130, 206, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.dashboard-card button:hover {
+  background: linear-gradient(90deg, #2563eb 60%, #38b2ac 100%);
+  box-shadow: 0 4px 16px rgba(49, 130, 206, 0.12);
+}
+
+/* Dark mode for dashboard */
+@media (prefers-color-scheme: dark) {
+  .dashboard-container {
+    background: linear-gradient(135deg, #23272f 0%, #1a202c 100%);
+    color: #e3e9f9;
+    box-shadow: 0 4px 24px rgba(49, 130, 206, 0.18);
+  }
+  .dashboard-container h1 {
+    color: #e3e9f9;
+  }
+  .dashboard-card {
+    background: linear-gradient(120deg, #23272f 60%, #1a202c 100%);
+    border: 1px solid #4fd1c5;
+    color: #e3e9f9;
+  }
+  .dashboard-card h2 {
+    color: #4fd1c5;
+  }
+  .dashboard-card button {
+    background: linear-gradient(90deg, #225ea8 60%, #38b2ac 100%);
+    color: #fff;
+  }
+  .dashboard-card button:hover {
+    background: linear-gradient(90deg, #2563eb 60%, #319795 100%);
+  }
+}
