@@ -1,3 +1,30 @@
+## 🚀 Live Demo (English)
+
+**View the live app:**
+
+https://sjhallo07.github.io/crozz_token
+
+---
+
+## 🔄 Automatic Deployment to GitHub Pages
+
+This project is set up for automatic deployment to GitHub Pages using npm scripts. To deploy your latest changes:
+
+1. Make sure your code is committed and pushed to the `main` branch.
+2. Run:
+
+    ```bash
+    npm run deploy
+    ```
+
+    This will build the app and publish the `dist` folder to GitHub Pages.
+
+3. Your site will be live at:
+
+    https://sjhallo07.github.io/crozz_token
+
+**More info:** [GitHub Pages Documentation (English)](https://docs.github.com/en/pages)
+
 # CROZZ Token Dashboard
 
 Official CROZZ Community Token — a powerful Sui-based token with advanced features and real-time monitoring.
