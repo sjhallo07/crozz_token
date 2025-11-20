@@ -1,3 +1,23 @@
+# CROZZ Token Dashboard
+
+Official CROZZ Community Token — a powerful Sui-based token with advanced features and real-time monitoring.
+
+## Powered by Sui
+
+![Sui Logo](https://cryptologos.cc/logos/sui-sui-logo.png)
+
+## Live Demo
+
+https://sjhallo07.github.io/crozz_token
+
+---
+
+## How to use the Sui logo in your app (HTML):
+
+```html
+<img src="https://cryptologos.cc/logos/sui-sui-logo.png" alt="Sui Logo" width="120" />
+```
+
 # CROZZ Token
 
 ![CROZZ Logo](logo-no-background.png)

@@ -22,19 +22,20 @@ export default function Dashboard({ theme }) {
 		<div className={`dashboard-container${themeClass ? ' ' + themeClass : ''}`}>
 			<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 24 }}>
 				<img src="/logo-no-background.png" alt="CROZZ Logo" style={{ width: 120, marginBottom: 12 }} />
+				<img src="https://cryptologos.cc/logos/sui-sui-logo.png" alt="Sui Logo" style={{ width: 60, marginBottom: 12, marginLeft: 12, verticalAlign: 'middle' }} />
 				<h1>CROZZ Token Dashboard</h1>
-				<p style={{ textAlign: 'center', maxWidth: 480, color: '#4a5568', marginBottom: 8 }}>
+				<p className="crozz-subtitle">
 					Official CROZZ Community Token — a powerful Sui-based token with advanced features and real-time monitoring.
 				</p>
-				<a href="https://crozzcoin.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#3182ce', marginBottom: 16 }}>
+				<a className="crozz-link" href="https://crozzcoin.com/" target="_blank" rel="noopener noreferrer">
 					https://crozzcoin.com/
 				</a>
-				<div style={{ display: 'flex', gap: 16, marginBottom: 8 }}>
-					<ConnectButton />
+				<div className="wallet-buttons">
+					<ConnectButton className="sui-connect-button" />
 					<ConnectModal
 						trigger={
 							<button
-								style={{ padding: '8px 16px', borderRadius: 6, background: '#3182ce', color: '#fff', border: 'none', fontWeight: 500, cursor: 'pointer' }}
+								className="sui-connect-button"
 								disabled={!!currentAccount}
 							>
 								{currentAccount ? 'Connected' : 'Connect (Modal)'}
