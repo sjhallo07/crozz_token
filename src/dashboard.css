@@ -49,29 +49,53 @@
   box-shadow: 0 4px 16px rgba(49, 130, 206, 0.12);
 }
 
-/* Dark mode for dashboard */
-@media (prefers-color-scheme: dark) {
-  .dashboard-container {
-    background: linear-gradient(135deg, #23272f 0%, #1a202c 100%);
-    color: #e3e9f9;
-    box-shadow: 0 4px 24px rgba(49, 130, 206, 0.18);
-  }
-  .dashboard-container h1 {
-    color: #e3e9f9;
-  }
-  .dashboard-card {
-    background: linear-gradient(120deg, #23272f 60%, #1a202c 100%);
-    border: 1px solid #4fd1c5;
-    color: #e3e9f9;
-  }
-  .dashboard-card h2 {
-    color: #4fd1c5;
-  }
-  .dashboard-card button {
-    background: linear-gradient(90deg, #225ea8 60%, #38b2ac 100%);
-    color: #fff;
-  }
-  .dashboard-card button:hover {
-    background: linear-gradient(90deg, #2563eb 60%, #319795 100%);
-  }
+
+/* Dark theme override */
+.dashboard-container.dark-theme {
+  background: linear-gradient(135deg, #23272f 0%, #1a202c 100%);
+  color: #e3e9f9;
+  box-shadow: 0 4px 24px rgba(49, 130, 206, 0.18);
+}
+.dashboard-container.dark-theme h1 {
+  color: #e3e9f9;
+}
+.dashboard-container.dark-theme .dashboard-card {
+  background: linear-gradient(120deg, #23272f 60%, #1a202c 100%);
+  border: 1px solid #4fd1c5;
+  color: #e3e9f9;
+}
+.dashboard-container.dark-theme .dashboard-card h2 {
+  color: #4fd1c5;
+}
+.dashboard-container.dark-theme .dashboard-card button {
+  background: linear-gradient(90deg, #225ea8 60%, #38b2ac 100%);
+  color: #fff;
+}
+.dashboard-container.dark-theme .dashboard-card button:hover {
+  background: linear-gradient(90deg, #2563eb 60%, #319795 100%);
+}
+
+/* Pink theme override */
+.dashboard-container.pink-theme {
+  background: linear-gradient(135deg, #fff0f6 0%, #ffe0f0 100%);
+  color: #d72660;
+  box-shadow: 0 4px 24px rgba(215, 38, 96, 0.10);
+}
+.dashboard-container.pink-theme h1 {
+  color: #d72660;
+}
+.dashboard-container.pink-theme .dashboard-card {
+  background: linear-gradient(120deg, #fff0f6 60%, #ffe0f0 100%);
+  border: 1px solid #ffb6d5;
+  color: #d72660;
+}
+.dashboard-container.pink-theme .dashboard-card h2 {
+  color: #d72660;
+}
+.dashboard-container.pink-theme .dashboard-card button {
+  background: linear-gradient(90deg, #d72660 60%, #ffb6d5 100%);
+  color: #fff;
+}
+.dashboard-container.pink-theme .dashboard-card button:hover {
+  background: linear-gradient(90deg, #b91c4b 60%, #ffb6d5 100%);
 }
