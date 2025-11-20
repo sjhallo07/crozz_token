@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   useSuiClientQuery,
   useSuiClientQueries,
@@ -13,9 +14,7 @@ import {
   useSignAndExecuteTransaction,
   useSuiClient,
   useDisconnectWallet,
-  useConnectWallet,
-  useWalletStatus,
-  useWalletKit
+  useConnectWallet
 } from '@mysten/dapp-kit';
 
 const owner = '0x123'; // Example address
@@ -29,8 +28,6 @@ export default function RpcHooksDemo() {
 	const accounts = useAccounts();
 	const wallets = useWallets();
 	const currentWallet = useCurrentWallet();
-	const walletStatus = useWalletStatus();
-	const walletKit = useWalletKit();
 	const { disconnect } = useDisconnectWallet();
 	const { mutate: connectWallet } = useConnectWallet();
 
@@ -113,11 +110,7 @@ export default function RpcHooksDemo() {
 			<pre>{JSON.stringify(currentWallet, null, 2)}</pre>
 
 
-			<h3>useWalletStatus</h3>
-			<pre>{JSON.stringify(walletStatus, null, 2)}</pre>
 
-			<h3>useWalletKit</h3>
-			<pre>{JSON.stringify(walletKit, null, 2)}</pre>
 
 			<h3>useConnectWallet</h3>
 			<button onClick={() => connectWallet({ walletName: wallets[0]?.name })} disabled={!wallets.length}>Connect First Wallet</button>
@@ -135,7 +128,7 @@ export default function RpcHooksDemo() {
 			<button onClick={handleSignAndExecTx} disabled={isSigningAndExec}>Sign & Execute Transaction</button>
 
 			<h3>useSuiClient</h3>
-			<pre>{JSON.stringify(suiClient, null, 2)}</pre>
+			<pre>{suiClient ? '[SuiClient instance]' : 'Not available'}</pre>
 
 			<h3>useSuiClientQuery (getOwnedObjects)</h3>
 			{isPending1 ? <div>Loading...</div> : isError1 ? <div>Error: {error1.message}</div> : <pre>{JSON.stringify(ownedObjects, null, 2)}</pre>}

@@ -2,19 +2,23 @@
   "name": "crozz_token",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://sjhallo07.github.io/crozz_token",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "npx gh-pages -d dist"
   },
   "dependencies": {
     "@mysten/dapp-kit": "^0.19.9",
     "@mysten/sui": "^1.45.0",
     "@tanstack/react-query": "^5.90.10",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^7.2.2"
   }
 }
